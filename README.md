@@ -76,6 +76,7 @@ The module grants the following read-only permissions:
 
 ### CloudWatch
 - `cloudwatch:GetMetricData` — Retrieve metric data for analysis
+- `cloudwatch:GetMetricStatistics` — Retrieve metric statistics for analysis
 
 All permissions are scoped to `"Resource": "*"` as these are read-only describe/list operations that don't support resource-level permissions.
 

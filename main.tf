@@ -53,7 +53,10 @@ data "aws_iam_policy_document" "readonly" {
 
   statement {
     sid       = "CloudWatchMetrics"
-    actions   = ["cloudwatch:GetMetricData"]
+    actions   = [
+      "cloudwatch:GetMetricData",
+      "cloudwatch:GetMetricStatistics"
+    ]
     resources = ["*"]
   }
 }

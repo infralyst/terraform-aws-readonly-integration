@@ -56,6 +56,12 @@ data "aws_iam_policy_document" "readonly" {
   }
 
   statement {
+    sid       = "EKSReads"
+    actions   = ["eks:DescribeNodegroup"]
+    resources = ["*"]
+  }
+
+  statement {
     sid       = "CloudWatchMetrics"
     actions   = [
       "cloudwatch:GetMetricData",

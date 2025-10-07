@@ -76,6 +76,9 @@ The module grants the following read-only permissions:
 - `autoscaling:DescribeAutoScalingGroups` — List and describe Auto Scaling Groups
 - `autoscaling:DescribeAutoScalingInstances` — List and describe Auto Scaling instances
 
+### EKS
+- `eks:DescribeNodegroup` — Describe EKS node groups
+
 ### CloudWatch
 - `cloudwatch:GetMetricData` — Retrieve metric data for analysis
 - `cloudwatch:GetMetricStatistics` — Retrieve metric statistics for analysis

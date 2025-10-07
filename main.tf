@@ -40,7 +40,8 @@ data "aws_iam_policy_document" "readonly" {
       "ec2:DescribeInstanceTypes",
       "ec2:DescribeLaunchTemplates",
       "ec2:DescribeLaunchTemplateVersions",
-      "ec2:DescribeVolumes"
+      "ec2:DescribeVolumes",
+      "ec2:DescribeTags"
     ]
     resources = ["*"]
   }

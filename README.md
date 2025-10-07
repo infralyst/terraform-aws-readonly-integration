@@ -70,6 +70,7 @@ The module grants the following read-only permissions:
 - `ec2:DescribeLaunchTemplates` — List and describe launch templates
 - `ec2:DescribeLaunchTemplateVersions` — Get launch template version details
 - `ec2:DescribeVolumes` — List and describe EBS volumes
+- `ec2:DescribeTags` — List and describe tags on EC2 resources
 
 ### Auto Scaling
 - `autoscaling:DescribeAutoScalingGroups` — List and describe Auto Scaling Groups

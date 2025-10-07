@@ -74,6 +74,7 @@ The module grants the following read-only permissions:
 
 ### Auto Scaling
 - `autoscaling:DescribeAutoScalingGroups` — List and describe Auto Scaling Groups
+- `autoscaling:DescribeAutoScalingInstances` — List and describe Auto Scaling instances
 
 ### CloudWatch
 - `cloudwatch:GetMetricData` — Retrieve metric data for analysis

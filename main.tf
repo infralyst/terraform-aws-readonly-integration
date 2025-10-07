@@ -48,7 +48,10 @@ data "aws_iam_policy_document" "readonly" {
 
   statement {
     sid       = "ASGReads"
-    actions   = ["autoscaling:DescribeAutoScalingGroups"]
+    actions   = [
+      "autoscaling:DescribeAutoScalingGroups",
+      "autoscaling:DescribeAutoScalingInstances"
+    ]
     resources = ["*"]
   }
 

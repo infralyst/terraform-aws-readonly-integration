@@ -75,6 +75,7 @@ The module grants the following read-only permissions:
 ### Auto Scaling
 - `autoscaling:DescribeAutoScalingGroups` — List and describe Auto Scaling Groups
 - `autoscaling:DescribeAutoScalingInstances` — List and describe Auto Scaling instances
+- `autoscaling:DescribeScalingActivities` — List and describe scaling activities
 
 ### EKS
 - `eks:DescribeNodegroup` — Describe EKS node groups

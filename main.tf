@@ -19,7 +19,7 @@ resource "aws_iam_role" "infralyst" {
   path        = "/"
 
   assume_role_policy = jsonencode({
-    Version   = "2012-10-17",
+    Version = "2012-10-17",
     Statement = [{
       Effect    = "Allow",
       Action    = "sts:AssumeRole",
@@ -47,8 +47,8 @@ data "aws_iam_policy_document" "readonly" {
   }
 
   statement {
-    sid       = "ASGReads"
-    actions   = [
+    sid = "ASGReads"
+    actions = [
       "autoscaling:DescribeAutoScalingGroups",
       "autoscaling:DescribeAutoScalingInstances",
       "autoscaling:DescribeScalingActivities"
@@ -63,8 +63,8 @@ data "aws_iam_policy_document" "readonly" {
   }
 
   statement {
-    sid       = "CloudWatchMetrics"
-    actions   = [
+    sid = "CloudWatchMetrics"
+    actions = [
       "cloudwatch:GetMetricData",
       "cloudwatch:GetMetricStatistics"
     ]

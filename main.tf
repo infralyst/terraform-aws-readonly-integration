@@ -64,6 +64,17 @@ data "aws_iam_policy_document" "readonly" {
     ]
     resources = ["*"]
   }
+
+  statement {
+    sid = "ECSReads"
+    actions = [
+      "ecs:ListClusters",
+      "ecs:ListServices",
+      "ecs:DescribeServices",
+      "ecs:DescribeTaskDefinition"
+    ]
+    resources = ["*"]
+  }
 }
 
 resource "aws_iam_policy" "readonly" {

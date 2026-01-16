@@ -1,6 +1,6 @@
 # Terraform AWS Read-Only Integration for Infralyst
 
-Creates a read-only cross-account IAM role for Infralyst with External ID; least-privilege policy for EC2, ASG, and CloudWatch metrics.
+Creates a read-only cross-account IAM role for Infralyst with External ID; least-privilege policy for EC2, ASG, ECS, and CloudWatch metrics.
 
 ## What This Module Does
 
@@ -80,6 +80,12 @@ The module grants the following read-only permissions:
 ### CloudWatch
 - `cloudwatch:GetMetricData` — Retrieve metric data for analysis
 - `cloudwatch:GetMetricStatistics` — Retrieve metric statistics for analysis
+
+### ECS
+- `ecs:ListClusters` — List ECS clusters
+- `ecs:ListServices` — List services in ECS clusters
+- `ecs:DescribeServices` — Get details about ECS services
+- `ecs:DescribeTaskDefinition` — Get task definition details
 
 All permissions are scoped to `"Resource": "*"` as these are read-only describe/list operations that don't support resource-level permissions.
 
